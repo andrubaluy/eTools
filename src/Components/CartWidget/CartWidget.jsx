@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
-import cart from "./assets/cartImage.png";
+import cartImage from "./assets/cartImage.png";
+import { useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 
 export const CartWidget = () => {
   let cartSize = 0;
+  const { cart,totalItems } = useContext( CartContext);
   return (
     <>
-        <img src={cart} alt="cart-widget" height="30" />
-        {cartSize}
+        <img src={cartImage} alt="Cart" style={{ width: '30px', marginRight: '5px' }} /> 
+        <span className="badge bg-secondary">{totalItems}</span>
     </>
   );
 };

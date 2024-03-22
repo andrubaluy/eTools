@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-export const ItemCount = ({stock}) => {
-    const [count, setCount] = useState(1);
+export const ItemCount = ({stock, initial = 1, onAdd}) => {
+    const [count, setCount] = useState(initial);
 
     const increase = () => {
         if (count < stock){
@@ -17,18 +17,19 @@ export const ItemCount = ({stock}) => {
         setCount(count - 1);
     }
 
+    
   return (
-    <div className="justify-content-center align-content-center p-4">
+    <div className="p-4 row">
       <div>
-        <button className="btn btn-outline-secondary mx-3" onClick={decrease}>
+        <button className="btn btn-outline-secondary mx-4" onClick={decrease}>
           -
         </button>
         <strong>{count}</strong>
-        <button className="btn btn-outline-secondary mx-3" onClick={increase}>
+        <button className="btn btn-outline-secondary mx-4" onClick={increase}>
           +
         </button>
       </div>
-      <button className="btn btn-outline-primary mt-2" >
+      <button className="btn btn-success btn-block mt-4" onClick={() => onAdd(count)}>
         Añadir
       </button>
     </div>

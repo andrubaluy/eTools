@@ -21,7 +21,7 @@ const Navbar = () => {
             <button className="btn btn-outline-dark mx-2">Herramientas Manuales</button>
           </Link>
         </div>
-        <Link to="/Cart">
+        <Link to="/cart">
           <CartWidget src={logo} />
         </Link>
       </div>

@@ -14,11 +14,8 @@ const ItemListContainer = () => {
   const getProductsDB = ( category ) => {
     
     //Reference to our collection from the database
-    // const myProducts = category
-    //   ? collection(db, "Products", where("category", "==", category))
-    //   : collection(db, "Products");
-
-    const myProducts =  collection(db, "Products");
+    const myProducts = category ? query( collection(db, "Products"), where( "category", "==",  category) ) : collection(db, "Products")
+    
     //Get documents from data base
     getDocs(myProducts).then((response) => {
       // Get docuemnts from firebase
