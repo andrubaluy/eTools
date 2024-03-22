@@ -113,7 +113,7 @@ export const Checkout = () => {
           })
         return <h3>Numero de orden: {orderId}</h3>
     }
-    
+
     if(totalItems === 0) {
         return <>
             <h3>No hay items en el carrito</h3>
@@ -171,13 +171,13 @@ export const Checkout = () => {
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="shippingOption" id="expressShipping" value="express" checked={shippingOption === 'express'} onChange={handleShippingChange} />
                         <label className="form-check-label" htmlFor="expressShipping">
-                            Express Shipping (48 a 72 Horas)
+                            Entrega Express (48 a 72 Horas)
                         </label>
                     </div>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" name="shippingOption" id="overnightShipping" value="overnight" checked={shippingOption === 'overnight'} onChange={handleShippingChange} />
                         <label className="form-check-label" htmlFor="overnightShipping">
-                            Overnight Shipping (24 Horas)
+                            Inmediata (24 Horas)
                         </label>
                     </div>
                 </div>

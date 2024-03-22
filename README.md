@@ -1,8 +1,33 @@
-# React + Vite
+# Etools E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripcion
 
-Currently, two official plugins are available:
+Bienvenido a eTools. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta web es un eCommerce de Herramientas de ferretería.
+
+## Tecnologias utilizadas
+
+- ReactJS
+- Vite
+- React Router Dom
+- Sweet Alert 2
+- Firebase
+- Bootstrap 5
+
+## Las imagenes
+
+Las imagenes se encuentran Hosteadas en imgur
+
+## Hosting
+
+La web se encuentra hosteada en Github
+URL: https://65fe0eb2e8ba207c2399cd25--chic-puffpuff-85b68e.netlify.app/
+
+
+## Contacto
+
+https://www.linkedin.com/in/andres-barfod-856126a1
+
+
+
